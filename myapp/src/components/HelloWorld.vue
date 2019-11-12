@@ -8,7 +8,7 @@
           href="https://vuejs.org"
           target="_blank"
         >
-          Core Docs
+          切换分支测试
         </a>
       </li>
       <li>
