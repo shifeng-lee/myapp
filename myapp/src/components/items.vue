@@ -1,5 +1,13 @@
 <template>
   <div>
+    <van-nav-bar
+      :title=headTitle
+      :left-text=leftText
+      right-text="按钮"
+      left-arrow
+      @click-left="onClickLeft"
+      @click-right="onClickRight"
+    />
     <van-card
       num="2"
       price="2.00"
@@ -34,7 +42,8 @@ import {
   GoodsActionButton,
   Card,
   Button,
-  Tag
+  Tag,
+  NavBar
 } from 'vant'
 
 Vue
@@ -45,10 +54,14 @@ Vue
   .use(Card)
   .use(Button)
   .use(Tag)
+  .use(NavBar)
 export default {
   name: 'Items',
   data () {
-    return {}
+    return {
+      headTitle: '大甩卖',
+      leftText: '返回'
+    }
   },
   methods: {
     onClickIcon () {
@@ -56,6 +69,12 @@ export default {
     },
     onClickButton () {
       Toast('点击按钮')
+    },
+    onClickLeft () {
+      Toast(this.leftText)
+    },
+    onClickRight () {
+      Toast('按钮')
     }
   }
 }
