@@ -11,13 +11,13 @@
     <van-card
       num="2"
       price="2.00"
-      desc="描述信息"
-      title="商品标题"
+      desc="9102年新款"
+      title="短袖"
       thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
     >
       <div slot="tags">
-        <van-tag plain type="danger">标签</van-tag>
-        <van-tag plain type="danger">标签</van-tag>
+        <van-tag plain type="danger">修身</van-tag>
+        <van-tag plain type="danger">养性</van-tag>
       </div>
       <div slot="footer">
         <van-button size="mini">按钮</van-button>
